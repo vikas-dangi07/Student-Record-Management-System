@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎓 Student Record Management System</h1>
+
+    <div class="form-card">
+      <h2>Add Student</h2>
+      <input type="number" id="roll_no" placeholder="Enter Roll Number">
+      <input type="text" id="name" placeholder="Enter Name">
+      <input type="number" id="marks" placeholder="Enter Marks">
+      <button onclick="addStudent()">Add</button>
+    </div>
+
+    <div class="form-card">
+      <h2>Search Student</h2>
+      <input type="number" id="search_roll" placeholder="Enter Roll Number">
+      <button onclick="searchStudent()">Search</button>
+    </div>
+
+    <div class="form-card">
+      <h2>Delete Student</h2>
+      <input type="number" id="delete_roll" placeholder="Enter Roll Number">
+      <button onclick="deleteStudent()">Delete</button>
+    </div>
+
+    <div class="form-card">
+      <h2>All Students</h2>
+      <button onclick="getAllStudents()">View All</button>
+      <div id="studentList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
